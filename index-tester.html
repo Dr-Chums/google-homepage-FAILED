@@ -20,13 +20,24 @@
         top: 300px;
         z-index: 1; 
     }
+    .sign_in {
+        width: 100px;
+        height:35px;
+        background-color: rgb(37, 121, 231);
+        border-radius: 15%;
+    }
     ul {
-        list-type-style: none;
+        list-style-type: none;
         margin: 0;
         padding: 0;
     }
     li {
-        display: inline;
+        float: right;
+    }
+    a {
+        display: block;
+        padding: 8px;
+        background-color: #ffffff
     }
 </style>
 <main>
@@ -39,10 +50,10 @@
             </div>
         </form>
         <ul>
-            <li><img src="grid-icon.png" alt="grid icon"></li>
-            <li><p>Gmail</p></li>
-            <li><p>Images</p></li>
-            <li><input type="button"></li>
+            <li><a href=""><input type="button" class="sign_in"></a></li>
+            <li><a href=""><img src="grid-icon.png" alt="grid icon"></a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="">Gmail</a></li>
         </ul>
     </body>
 </main>
