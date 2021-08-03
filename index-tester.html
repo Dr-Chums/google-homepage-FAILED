@@ -13,7 +13,6 @@
         top: 290px;
         border-radius: 50px;
         border-width: 1px;
-        color: #808080;
     }
     .search_icon {
         position: fixed;
@@ -21,43 +20,29 @@
         top: 300px;
         z-index: 1; 
     }
-    .grid_icon {
-        position: fixed;
-        left: 620px;
-        top: 15px;
+    ul {
+        list-type-style: none;
+        margin: 0;
+        padding: 0;
     }
-    .sign_in {
-        width: 100px;
-        height: 35px;
-        position: fixed;
-        left: 650px;
-        top: 10px;
-    }
-    .gmail {
-        position: fixed;
-        left: 570px;
-        top: 5px;
-    }
-    .images {
-        position: fixed;
-        left: 510px;
-        top: 5px;
+    li {
+        display: inline;
     }
 </style>
 <main>
     <body>
         <img src="google-logo.png" alt="Logo for Google" class="google_logo">
         <img src="search-icon.png" alt="search icon" class="search_icon">
-        <img src="grid-icon.png" alt="grid icon" class="grid_icon">
-        <p class="gmail">Gmail</p>
-        <p class="images">Images</p>
         <form>
-            <div>
-                <input type="button" class="sign_in">
-            </div>
             <div>
                 <input type="text" class="searchbar">
             </div>
         </form>
+        <ul>
+            <li><img src="grid-icon.png" alt="grid icon"></li>
+            <li><p>Gmail</p></li>
+            <li><p>Images</p></li>
+            <li><input type="button"></li>
+        </ul>
     </body>
 </main>
