@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <style>
     .google_logo {
-        position: fixed;
-        left: 250px;
-        top: 175px;
+        position: absolute;
+        left: 42.75%;
+        top: 27.5%;
     }
     .searchbar {
         height: 40px;
         width: 600px;
-        position: fixed;
-        left: 90px;
-        top: 290px;
+        position: absolute;
+        left: 33%;
+        top: 40%;
         border-radius: 50px;
         border-width: 1px;
     }
     .search_icon {
-        position: fixed;
-        left: 102px;
-        top: 300px;
+        position: absolute;
+        left: 34%;
+        top: 41%;
         z-index: 1; 
     }
     .sign_in {
         width: 100px;
         height:35px;
         background-color: rgb(37, 121, 231);
-        border-radius: 15%;
+        display: block;
+        border-radius: 8%;
+        color: white;
     }
     ul {
         list-style-type: none;
@@ -39,6 +41,32 @@
         padding: 8px;
         background-color: #ffffff
     }
+    .google_search {
+        position: absolute;
+        left: 42%;
+        top: 48%;
+        height: 35px;
+        width: 120px;
+        display: block;
+        border-radius: 8%;
+        border-color: white;
+    }
+    .lucky {
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        height: 35px;
+        width: 120px;
+        display: block;
+        border-radius: 8%;
+        border-color: white;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 </style>
 <main>
     <body>
@@ -50,10 +78,23 @@
             </div>
         </form>
         <ul>
-            <li><a href=""><input type="button" class="sign_in"></a></li>
+            <li><a href=""><button class="sign_in">Sign In</button></a></li>
             <li><a href=""><img src="grid-icon.png" alt="grid icon"></a></li>
             <li><a href="">Images</a></li>
             <li><a href="">Gmail</a></li>
         </ul>
+        <button class="google_search">Google Search</button>
+        <button class="lucky">I'm Feeling Lucky</button>
+        <div class="footer">
+            <ul class="footer2">
+                <li style="float:left"><a href="">About</a></li>
+                <li style="float:left"><a href="">Advertising</a></li>
+                <li style="float:left"><a href="">Business</a></li>
+                <li style="float:left"><a href="">How Search Works</a></li>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+        </div>
     </body>
 </main>
